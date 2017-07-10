@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sistem Informasi Klinik Cisfo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SIK">
+    <meta name="author" content="kelompok6" >
+    <script src="template/assets/js/jquery.js"></script>
+    <script src="template/assets/js/bootstrap-transition.js"></script>
+    <script src="template/assets/js/bootstrap-alert.js"></script>
+    <script src="template/assets/js/bootstrap-modal.js"></script>
+    <script src="template/assets/js/bootstrap-modal.js"></script>
+    <script src="template/assets/js/bootstrap-dropdown.js"></script>
+    <script src="template/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="template/assets/js/bootstrap-tab.js"></script>
+    <script src="template/assets/js/bootstrap-tooltip.js"></script>
+    <script src="template/assets/js/bootstrap-popover.js"></script>
+    <script src="template/assets/js/bootstrap-button.js"></script>
+    <script src="template/assets/js/bootstrap-collapse.js"></script>
+    <script src="template/assets/js/bootstrap-carousel.js"></script>
+    <script src="template/assets/js/bootstrap-typeahead.js"></script>
+    <script src="template/assets/js/bootstrap-affix.js"></script>
+    <link href="template/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="template/assets/css/template.css" rel="stylesheet">
+    <link href="template/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="template/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand">Operator(Nama)</a>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">
+              <a href="login.html" class="navbar-link"> 
+              <button>Logout</button>
+              </a>
+              </a>
+            </p>
+            
+            <ul class="nav">
+              <li><a href="berandaoperator.html">Beranda</a></li>
+              <li><a href="profiloperator.html">Profil</a></li>
+              
+                  <li class="dropdown">
+                        <a href="" clberandadropdown-toggle" data-toggle="dropdown">Kelola Data<b class="caret"></b>
+                        <ul class="dropdown-menu">
+                          <li><a href="datapasien.html">Data Pasien</a> </li>
+                          <li><a href="daftartransaksi.html">Data Transaksi Rekam Medis</a> </li>
+                        </ul>
+                  </li>
+                  <li class="dropdown">
+                        <a href="" clberandadropdown-toggle" data-toggle="dropdown">Laporan<b class="caret"></b>
+                        <ul class="dropdown-menu">
+                          <li><a href="lappasien.html"> Laporan Data Pasien</a> </li>
+                        </ul>
+                  </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>
