@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sistem Informasi Klinik Cisfo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SIK">
+    <meta name="author" content="kelompok6" >
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/bootstrap-affix.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/template.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand">Operator(Nama)</a>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">
+              <a href="login.html" class="navbar-link"> 
+              <button>Logout</button>
+              </a>
+              </a>
+            </p>
+            
+            <ul class="nav">
+              <li><a href="berandaoperator.html">Beranda</a></li>
+              <li><a href="profiloperator.html">Profil</a></li>
+              
+                  <li class="dropdown">
+                        <a href="" clberandadropdown-toggle" data-toggle="dropdown">Kelola Data<b class="caret"></b>
+                        <ul class="dropdown-menu">
+                          <li><a href="datapasien.html">Data Pasien</a> </li>
+                          <li><a href="daftartransaksi.html">Data Transaksi Rekam Medis</a> </li>
+                        </ul>
+                  </li>
+                  <li class="dropdown">
+                        <a href="" clberandadropdown-toggle" data-toggle="dropdown">Laporan<b class="caret"></b>
+                        <ul class="dropdown-menu">
+                          <li><a href="#"$ id="lappasien"> Data Pasien</a> </li>
+                          <li><a href="lapdatatransaksi"> Laporan Transaksi Rekam Medis</a></li>
+                        </ul>
+                  </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="bungkusisi">
+  <div class="headjudul">
+      <h2>Sistem Informasi Klinik Cisfo</h2>
+  </div>
+  <div class="modisi">
+  <div class="logo">
+  </div>
+  <div class="container-fluid" id="container">
+  <div class="teks-mod">
+      <div class="posisi1">
+<h3>Laporan Data Transaksi Rekam Medis Pasien</h3>
+
+ <table class="table table-bordered">
+    <thead>
+    <tr>
+    <td >No</td>
+    <td >Id Transaksi</td>
+    <td >Id Pasien</td>
+    <td >Id Dokter</td>
+    <td>Tanggal</td>
+	<td>No Ruangan</td>
+	<td>Keluhan</td>
+	<td>Diagnosa</td>
+	<td>Pengobatan</td>
+    </tr>
+    </thead>
+    <tr>
+    <td>1</td>
+    <td>A0021</td>
+    <td>C4532</td>
+    <td>C1256980</td>
+    <td>07/01/2017</td>
+	<td>A001</td>
+	<td>Mual</td>
+	<td>Hamil</td>
+	<td></td>
+    </tr>
+    <tr>
+    <td>2</td>
+    <td>S2009</td>
+    <td>A8901</td>
+    <td>A9087671</td>
+    <td>07/01/2017</td>
+	<td>C008</td>
+	<td>lemah, lunglai</td>
+	<td>Anemia</td>
+	<td></td>
+    </tr>
+    </table>
+         <button class="btn btn default" type="submit">export PDF</button>
+         <button class="btn btn­ default" onclick="window.print()" type="submit">Print</button>
+
+    </div>
+    </div>
+  </div>
+  </div>
+  </div> 
+  </div>
+  </div>
+  <footer class="footer">
+        <p>Designed and built by kelompok 5 (Rika, Fania, Agung)</p>
+        <P>Copyright &copy; CISFO 2015</P>
+        <P>UNIVERSITAS TANJUNGPURA</P> 
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sistem Informasi Klinik Cisfo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SIK">
+    <meta name="author" content="kelompok6" >
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/bootstrap-affix.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/template.css" rel="stylesheet">
+    <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand">Operator(Nama)</a>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">
+              <a href="login.html" class="navbar-link"> 
+              <button>Logout</button>
+              </a>
+              </a>
+            </p>
+            
+            <ul class="nav">
+              <li><a href="berandaoperator.html">Beranda</a></li>
+              <li><a href="profiloperator.html">Profil</a></li>
+              
+                  <li class="dropdown">
+                        <a href="" clberandadropdown-toggle" data-toggle="dropdown">Kelola Data<b class="caret"></b>
+                        <ul class="dropdown-menu">
+                          <li><a href="datapasien.html">Data Pasien</a> </li>
+                          <li><a href="daftartransaksi.html">Data Transaksi Rekam Medis</a> </li>
+                        </ul>
+                  </li>
+                  <li class="dropdown">
+                        <a href="" clberandadropdown-toggle" data-toggle="dropdown">Laporan<b class="caret"></b>
+                        <ul class="dropdown-menu">
+                          <li><a href="$"$ id="lappasien"> Data Pasien</a> </li>
+                          <li><a href="lapdatatransaksi.html"> Laporan Transaksi Rekam Medis</a></li>
+                        </ul>
+                  </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="bungkusisi">
+  <div class="headjudul">
+      <h2>Sistem Informasi Klinik Cisfo</h2>
+  </div>
+  <div class="modisi">
+  <div class="logo">
+  </div>
+  <div class="container-fluid" id="container">
+  <div class="teks-mod">
+  <h2>Data Telah Berhasil Disimpan<br>
+  Silahkan Cetak Kartu</h2>
+  <div class="boxkartu">
+  <div class="boxkartuheader">
+    <h4>Kartu Identitas Berobat<br>
+    Klinik Cisfo</h4>
+  </div>
+  <div class="headerlogokartu"> 
+    
+  </div>
+  <div class="boxisi">
+    <table class="table table-condensed">
+    <tr>
+    <td>Nama</td>
+    <td>:</td>
+    <td>Murni</td>
+    </tr>
+    <tr>
+    <td>Id Pasien</td>
+    <td>:</td>
+    <td>C2262</td>
+    </tr>
+    <tr>
+    <td>Tanggal Lahir</td>
+    <td>:</td>
+    <td>12/10/1985</td>
+    </tr>
+    <tr>
+    <td>Jenis Kelamin</td>
+    <td>:</td>
+    <td>Perempuan</td>
+    </tr>
+    <tr>
+    <td>Alamat</td>
+    <td>:</td>
+    <td>Jalan Ayani, Pontianak</td>
+    </tr>
+    <tr>
+    <td>No Hp</td>
+    <td>:</td>
+    <td>081234567654</td>
+    </tr>
+    </table>
+  </div>
+        <button class="btn btn­ default" onclick="window.print()" type="submit">Cetak Kartu</button>
+        <a class="btn btn-default" href="transaksi.html" role="button">Kelola Pasien</a>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  <footer class="footer">
+        <p>Designed and built by kelompok 5 (Rika, Fania, Agung)</p>
+        <P>Copyright &copy; CISFO 2015</P>
+        <P>UNIVERSITAS TANJUNGPURA</P> 
+    </footer>
+    <script>
+       $(document).ready(function(){
+        $('#lappasien').click (function(){
+        $('#container').load('lappasien.html');
+    });
+});
+    </script>
+</body>
+</html>
+
