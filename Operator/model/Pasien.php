@@ -5,23 +5,31 @@
 
 include_once 'Model.php';
 class Pasien extends Model{
-	public $id_P;
+	public $id_karyawan;
 	public $nama;
 	public $tgl_lahir;
-	public $jenis_kel;
 	public $alamat;
-	public $no_hp;
+	public $jenis_kel;
+
+	public function simpanDataPasien()
+	{
+		$query = $this->db->prepare("SELECT * FROM pasien");
+		$query->execute();
+		$data=$query->fethcAll();
+
+		return $data;
+
+	}
 	
-	public function simpanDataPasien($id_P,$nama, $tgl_lahir, $jenis_kel, $alamat, $no_hp)
+	public function tambahPasien($id_karyawan,$nama,$tgl_lahir,$alamat,$jenis_kel)
 	{
 		try
 		  {
-		   $stmt = $this->db->prepare("INSERT INTO pasien(id_P, nama, tgl_lahir, jenis_kel, alamat, no_hp) VALUES(:id_P, :nama, :tgl_lahir, :jenis_kel, :alamat, :no_hp)");
-		   $stmt->bindparam(":id_P",$id_P);
-		   $stmt->bindparam(":nama",$nama);
-		   $stmt->bindparam(":tgl_lahir",$jenis_kel);
-		   $stmt->bindparam(":alamat",$alamat);
-		   $stmt->bindparam(":no_hp",$no_hp);
+		   $stmt = $this->db->prepare("INSERT INTO pasien(id_karyawan, nama, tgl_lahir, alamat, jenis_kel) VALUES(:id_karywan, :nama, :tgl_lahir, :jenis_kel)");
+		   $stmt->bindparam(":tanggal",$tanggal);
+		   $stmt->bindparam(":judul",$judul);
+		   $stmt->bindparam(":isi",$isi);
+		   $stmt->bindparam(":id_kategori",$id_kategori);
 		   $stmt->execute();
 		   return true;
 		  }
@@ -30,4 +38,6 @@ class Pasien extends Model{
 		   echo $e->getMessage(); 
 		   return false;
 		  }
-		}
+
+	}
+?>
