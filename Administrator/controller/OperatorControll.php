@@ -3,7 +3,7 @@
 * 
 */
 include_once 'Controller.php';
-class admin extends Controller
+class Operator extends Controller
 {
 	public function getDataOperator(){
 

@@ -14,7 +14,7 @@ class Operator extends Model{
 	public function simpanDataOperator(){
 
 	}
-	public function getDataOperatorSpesifik(){
+	public function getDataOperatorSpesifik(id){
 
 	}
 	public function updateDataOperator(){
