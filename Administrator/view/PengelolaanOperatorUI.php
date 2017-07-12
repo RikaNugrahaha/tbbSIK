@@ -15,11 +15,17 @@ class PengelolaanOperatorUI extends View
 	public function tambahOperator(){
 
 	}
-	public function tampilFormEditOperator(){
+	public function tampilFormEdit(){
 
 	}
-	public function aksiUpdateOperator(){
+	public function aksiUbahOperator(){
 
+	}
+	public function tampilKelolaOperator(){
+
+	}
+	public function aksiHapusOperator(){
+		
 	}
 }
 ?>
