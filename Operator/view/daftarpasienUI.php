@@ -7,9 +7,8 @@ require_once 'View.php';
 class PendaftaranPasienUI extends View
 {
 	
-	public function tampilFormPasien()
+	public function tampilFormUI()
 	{
-<<<<<<< HEAD
 		include_once 'controller/BeritaManager.php';
 		
 		$bm = new BeritaManager();
@@ -18,9 +17,6 @@ class PendaftaranPasienUI extends View
 		
 		include_once 'pages/formberita.php';
 		
-=======
-		include_once 'pages/pasien.php';
->>>>>>> Fania_15
 		$this->end();
 	}
 
