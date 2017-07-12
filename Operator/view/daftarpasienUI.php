@@ -7,9 +7,9 @@ require_once 'View.php';
 class PendaftaranPasienUI extends View
 {
 	
-	public function tampilFormUI()
+	public function tampilFormPasien()
 	{
-		include_once 'pages/beranda.php';
+		include_once 'pages/pasien.php';
 		$this->end();
 	}
 }
