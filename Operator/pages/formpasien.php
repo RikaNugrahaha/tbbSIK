@@ -1,6 +1,14 @@
 <div class="container-fluid" id="container">
   <div class="teks-mod">
+<<<<<<< HEAD
   <form action="pesansuksespasien.php" method="post" >
+=======
+<<<<<<< HEAD
+  <form action="pesansukses.php" method="post" >
+=======
+  <form action="pesansuksespasien.php" method="post" >
+>>>>>>> Agungp
+>>>>>>> master
   <form class="form-horizontal">
   <form id="form" name="form">
   <div id="form" class="form">
@@ -47,4 +55,13 @@
   </form>
   </form>
   </div>
+<<<<<<< HEAD
   </div>
+=======
+<<<<<<< HEAD
+  </div>
+  </div>
+=======
+  </div>
+>>>>>>> Agungp
+>>>>>>> master

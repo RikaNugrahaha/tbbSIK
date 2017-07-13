@@ -19,6 +19,7 @@ class TransaksiControl extends Controller
 		return $list_ruangan;
 
 	}
+<<<<<<< HEAD
 	public function tambahTransaksi()
 	{
 		include_once 'model/Transaksi.php';
@@ -32,6 +33,8 @@ class TransaksiControl extends Controller
 		return $pesan;
 	}
 	
+=======
+>>>>>>> master
 
 }
 

@@ -18,11 +18,19 @@ class PengelolaanTransaksiUI extends View
 	public function tambahTransaksi()
 	{
 		include_once 'controller/TransaksiControl.php';
+<<<<<<< HEAD
 
 		$tc = new TransaksiControl();
 		$pesan = $tc->tambahTransaksi();
 
 		include_once 'pages/pesansuksestransaksi.php';
+=======
+
+		$tc = new TransaksiControl();
+		$pesan = $bm->tambah();
+
+		include_once 'pages/pesansukses.php';
+>>>>>>> master
 		$this->end();
 	}
 }
