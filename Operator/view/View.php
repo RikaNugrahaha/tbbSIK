@@ -18,8 +18,12 @@ class View
 
 	protected function end()
 	{
+
 		include_once 'template_operator/content.php';
 		include 'template_operator/footer.php';
+
+		include_once 'template/footer.php';
+
 	}
 	
 }

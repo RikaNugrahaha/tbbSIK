@@ -9,6 +9,7 @@ class PendaftaranPasienUI extends View
 	
 	public function tampilFormPasien()
 	{
+<<<<<<< HEAD
 
 		include_once 'pages/formpasien.php';
 		$this->end();
@@ -29,4 +30,20 @@ class PendaftaranPasienUI extends View
 	}
 }
 	
+=======
+		include_once 'pages/formpasien.php';
+		$this->end();
+	}
+	public function tambahPasien()
+	{
+		include_once 'controller/PasienControl.php';
+
+		$pc = new PasienControl();
+		$pesan = $pc->tambahPasien();
+
+		include_once 'pages/pesansuksespasien.php';
+		$this->end();
+	}
+}
+>>>>>>> Agungp
  ?>
