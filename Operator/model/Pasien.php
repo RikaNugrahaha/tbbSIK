@@ -5,31 +5,24 @@
 
 include_once 'Model.php';
 class Pasien extends Model{
-	public $id_karyawan;
-	public $nama;
+	public $id_pasien;
+	public $nama_pasien;
 	public $tgl_lahir;
+	public $jenis_kelamin;
 	public $alamat;
-	public $jenis_kel;
+	public $no_hp;
 
-	public function simpanDataPasien()
-	{
-		$query = $this->db->prepare("SELECT * FROM pasien");
-		$query->execute();
-		$data=$query->fethcAll();
 
-		return $data;
-
-	}
-	
-	public function tambahPasien($id_karyawan,$nama,$tgl_lahir,$alamat,$jenis_kel)
+	public function simpanDataPasien($nama_pasien, $tgl_lahir, $jenis_kelamin, $alamat, $no_hp)
 	{
 		try
 		  {
-		   $stmt = $this->db->prepare("INSERT INTO pasien(id_karyawan, nama, tgl_lahir, alamat, jenis_kel) VALUES(:id_karywan, :nama, :tgl_lahir, :jenis_kel)");
-		   $stmt->bindparam(":tanggal",$tanggal);
-		   $stmt->bindparam(":judul",$judul);
-		   $stmt->bindparam(":isi",$isi);
-		   $stmt->bindparam(":id_kategori",$id_kategori);
+		   $stmt = $this->db->prepare("INSERT INTO pasien(nama_pasien, tgl_lahir, jenis_kelamin, alamat, no_hp ) VALUES(:nama_pasien, :tgl_lahir, :jenis_kelamin, :alamat, :no_hp)");
+		   $stmt->bindparam(":nama_pasien",$nama_pasien);
+		   $stmt->bindparam(":tgl_lahir",$tgl_lahir);
+		   $stmt->bindparam(":jenis_kelamin",$jenis_kelamin);
+		   $stmt->bindparam(":alamat",$alamat);
+		   $stmt->bindparam(":no_hp",$no_hp);
 		   $stmt->execute();
 		   return true;
 		  }
@@ -39,5 +32,4 @@ class Pasien extends Model{
 		   return false;
 		  }
 
-	}
 ?>
