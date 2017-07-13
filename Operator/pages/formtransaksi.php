@@ -17,19 +17,16 @@
   <label>Dokter
 		<span class="small"></span>
 	</label>
-	<select name="Spesialis" id="Spesialis" class="highlight">
-  <option value="1">Dr.Crystal</option>
-  <option value="2">Dr.Taeyon</option>
-  <option value="3">Dr.Rudi</option>
-  <option value="4">Dr.Listi</option>
-  <option value="5">Dr.Agus</option>
-  <option value="6">Dr.Joko</option>
+	<select name="Dokter" id="Dokter" class="highlight"><?php foreach($list_dokter as $ld): ?>
+  <option value="<?php echo $ld['id_dokter'] ?>"><?php echo $ld['nama_dokter']?></option><?php endforeach ?>
   </select>
 
-	<label>No Ruangan
-		<span class="small"></span>
-	</label>
-	<input type="text" name="ruangan">
+    <label>Ruangan
+    <span class="small"></span>
+  </label>
+  <select name="Ruangan" id="Ruangan" class="highlight"><?php foreach($list_ruangan as $lr): ?>
+  <option value="<?php echo $ld['no_ruangan'] ?>"><?php echo $lr['nama_ruangan']?></option><?php endforeach ?>
+  </select>
 
   <label>Tanggal
     <span class="small"></span>
